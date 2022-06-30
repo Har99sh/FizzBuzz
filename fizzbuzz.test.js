@@ -84,8 +84,35 @@ describe ("fizbuzz", () => {
         expect(expected).toBe(result);
     });
 
+    test("It must return fizz if input has 3 in it", () => { 
+        const expected = "fizz";
+        const result = fizzbuzz(43);
+        expect(expected).toBe(result);
+    });
     
-    
+    test("It must return fizzbuzz if input has 15 in it", () => { 
+        const expected = "fizzbuzz";
+        const result = fizzbuzz(100153);
+        expect(expected).toBe(result);
+    });
 
+    test("It must return fizz if input has 3 in it", () => { 
+        const expected = "fizz";
+        const result = fizzbuzz(37);
+        expect(expected).toBe(result);
+    });
+
+    test("It must return buzz if input has 5 in it", () => { 
+        const expected = "buzz";
+        const result = fizzbuzz(1105);
+        expect(expected).toBe(result);
+    });
+
+    test("It must return buzz if input has 5 in it", () => { 
+        const expected = "buzz";
+        const result = fizzbuzz(110105);
+        expect(expected).toBe(result);
+    });
+    
 })
 

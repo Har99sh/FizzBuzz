@@ -1,11 +1,11 @@
 function fizzbuzz(n){
   if (n === 0){
     return 0;
-  }else if (n%15 === 0){
+  }else if (n%15 === 0 || (n).toString().includes(15)){
     return "fizzbuzz";
   }else if (n%5 === 0 ){
     return "buzz";
-  } else if (n%3 === 0 ){
+  } else if (n%3 === 0 || (n).toString().includes(3) ){
     return "fizz";
   } else if(isNaN(n)){
     return "error";
@@ -13,23 +13,6 @@ function fizzbuzz(n){
 }
 
 module.exports = fizzbuzz;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 function fizzBuzz(){
   
@@ -50,27 +33,35 @@ function fizzBuzz(){
 }
 }
 
+// function numberChecker(n){
 
+//   if ((n).toString().includes(15)){
+//     return "fizzBuzz";
+//     } else if ((n).toString().includes(3)) {
+//           return "fizz";
+//       }
+// }
 // fizzBuzz();
 
 
-function fizzBuzzPersonal(multipleOne, multipleTwo, rangeOfNumber, startNumber){
+// function fizzBuzzPersonal(multipleOne, multipleTwo, rangeOfNumber, startNumber){
   
-  for (let i = startNumber; i < rangeOfNumber; i++){
-    let checker = i;
-    let multOfFirst = (checker % multipleOne); 
-    let multOfSecond = (checker % multipleTwo);
-    let multOfBoth = (checker % (multipleOne * multipleTwo));
-    if (multOfFirst === 0 && multOfBoth !== 0){
-      console.log(i + " fizz");
-    } else if (multOfSecond === 0 && multOfBoth !== 0){
-          console.log(i + " buzz");
-      } else if (multOfBoth === 0){
-            console.log(i + " fizzBuzz");
-        }
-  }
+//   for (let i = startNumber; i <= rangeOfNumber; i++){
+//     let multOfFirst = (i % multipleOne); 
+//     let multOfSecond = (i % multipleTwo);
+//     let multOfBoth = (i % (multipleOne * multipleTwo));
+//     if (multOfBoth === 0 ){
+//       console.log(i + " fizzBuzz");
+//     } else if (multOfSecond === 0){
+//           console.log(i + " buzz");
+//       } else if (multOfFirst === 0){
+//             console.log(i + " fizz");
+//         }
+//   }
 
-}
+//}
+
+//fizzBuzzPersonal(3,5,100, 1)
 
 // fizzBuzzPersonal(2, 7, 200, 1);
 
